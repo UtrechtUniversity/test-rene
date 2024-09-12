@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello $USER, World!"
+
+      - name: Show OS
+        run: echo "$RUNNER_OS"
+
+      - name: ping registry
+        run: ping -c 4 registry.cp.its.uu.nl
