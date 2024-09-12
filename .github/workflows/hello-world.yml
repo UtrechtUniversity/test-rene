@@ -1,0 +1,13 @@
+name: Hello World Workflow
+
+# This workflow is manually triggered using the 'workflow_dispatch' event
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: [ ubuntu-latest ]
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello $USER, World!"
